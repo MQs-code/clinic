@@ -83,7 +83,6 @@ export default function Hero() {
                     alt="Aesthetics Hub Sargodha Premium Luxury Interior"
                     fill
                     priority
-                    preload={true}
                     className="object-cover transition-transform duration-1000 ease-out scale-[1.01] group-hover:scale-105"
                     sizes="(max-w-1024px) 100vw, 50vw"
                   />
