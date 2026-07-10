@@ -20,6 +20,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Aesthtic Hub Sargodha",
   description: "ENT, Allergy, Hearing & Voice Clinic",
+  themeColor: "#000000",
 };
 
 export default function RootLayout({

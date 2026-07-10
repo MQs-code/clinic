@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import Link from "next/link";
-import Bookig from '../BookingModel/page'
+import BookingModal from '../BookingModel/page'
 
 const Page = () => {
   const [isModel, setIsModel] = useState(false);
@@ -87,13 +87,15 @@ const Page = () => {
       )}
 
       {/* Dynamic Modal Controller Integration */}
-    <Bookig 
-        isOpen={isModel} 
-        onClose={() => setIsModel(false)} 
-        budget={0}
-        suggestion={null}
-        directBookingReason=""
-      />
+    <BookingModal
+  isOpen={isModel} 
+  onClose={() => setIsModel(false)} 
+  budget={1200}
+  suggestion={{
+    name: "General Aesthetic Consultation",
+    tag: "Clinical Consultation"
+  }}
+/>
 
     </main>
   )
